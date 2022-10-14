@@ -16,3 +16,16 @@ checkboxBtn.addEventListener('change', () => {
 textArea.addEventListener('keyup', () => {
   counter.innerHTML = String(500 - textArea.value.length);
 });
+
+let btnLogin = document.getElementById('login-btn')
+let inputEmail = document.getElementById('login')
+let inputPassword = document.getElementById('senha')
+
+function alerta() { 
+    if (inputEmail.value === "tryber@teste.com" && inputPassword.value === '123456') {
+        alert('Olá, Tryber!');
+    } else {
+        alert('Email ou senha inválidos.');
+    }
+}
+btnLogin.addEventListener('click', alerta);
